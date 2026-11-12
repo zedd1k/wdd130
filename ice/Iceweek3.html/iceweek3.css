@@ -1,0 +1,31 @@
+body{
+background-color: grey;
+
+}
+.bordered{
+
+    background-color: lightcoral;
+    border: solid 2px orange;
+    margin: 30px;
+    padding: 10px;
+
+
+}
+.red{
+    h2{
+        color:cadetblue
+    }
+    color: red;
+    padding-top: 50px;
+}
+h1{
+    margin-bottom: 100px;
+}
+.hoverer:hover{
+    color: aqua;
+    display: inline;
+}
+span{
+    background-color: aliceblue;
+    display: ;
+}

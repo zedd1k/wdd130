@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Church Leadership</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem 1rem;
+      background: #E8ECED;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    /* The rounded black frame with the background image */
+    .frame {
+      max-width: 720px;
+      margin: 0 auto;
+      border: 8px solid #000;
+      border-radius: 32px;
+      overflow: hidden;
+      background: url("christus.jpg") center / cover no-repeat;
+      /* Shifts the content to the right so the left side of the
+         background image (the statue) stays visible */
+      padding: 1rem 1.5rem 2rem 38%;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: normal;
+      margin: 0.5rem 0 1rem;
+    }
+
+    h2.main {
+      font-size: 2rem;
+    }
+
+    h2.sub {
+      font-size: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    /* All circular photos share these styles */
+    .frame img {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      display: block;
+    }
+
+    /* First Presidency: 3 in a row, middle one larger */
+    .presidency {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .presidency img { width: 110px; }
+    .presidency img:nth-child(2) { width: 135px; }
+
+    /* Quorum of the Twelve: 4 columns x 3 rows */
+    .twelve {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      justify-items: center;
+    }
+    .twelve img { width: 80px; }
+
+    /* Stack everything on small screens */
+    @media (max-width: 600px) {
+      .frame { padding-left: 1rem; }
+      .presidency img { width: 80px; }
+      .presidency img:nth-child(2) { width: 100px; }
+      .twelve img { width: 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+
+    <h2 class="main">First Presidency</h2>
+    <div class="presidency">
+  <img src="images/oaks.jpg" alt="first presidency 1">
+ <img src="images/eyring.jpg" alt="first presidency 2">
+ <img src="images/christofferson.jpg" alt="first presidency 3">
+    </div>
+
+    <h2 class="sub">Quorum of the Twelve Apostles</h2>
+    <div class="twelve">
+      <img src="images/anderson.jpg" alt="photo 4">
+  <img src="images/kearon.jpg" alt="Photo 5">
+  <img src="images/cook.jpg" alt="Photo 6">
+  <img src="images/bednar.jpg" alt="Photo 7">
+    <img src="images/causse.jpg" alt="Photo 8">
+  <img src="images/gong.jpg" alt="Photo 9">
+  <img src="images/stevenson.jpg" alt="Photo 10">
+  <img src="images/uchtdorf.jpg" alt="Photo 11">
+  <img src="images/stevenson.jpg" alt="Photo 12">
+  <img src="images/renlund.jpg" alt="Photo 13">
+  <img src="images/gilbert.jpg" alt="Photo 14">
+  <img src="images/rasband.jpg" alt="photo 15">
+    </div>
+
+  </div>
+</body>
+</html>

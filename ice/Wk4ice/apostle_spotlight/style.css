@@ -1,0 +1,50 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-image: url("christus.jpg");
+  background-size: cover;          /* scale to cover the whole viewport */
+  background-position: center;     /* keep the focal point centered */
+  background-repeat: no-repeat;
+  background-attachment: fixed;    /* stays put while content scrolls */
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  grid-template-columns: repeat(auto-fit, 120px);
+  justify-content: center;
+}
+.first img{
+      width: 100%;
+  aspect-ratio: 1 / 1;      /* force a square box */
+  object-fit: cover;        /* crop the image to fill it without stretching */
+  border-radius: 50%;       /* turns the square into a circle */
+  border: 8px solid white;  /* the circular border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;      /* force a square box */
+  object-fit: cover;        /* crop the image to fill it without stretching */
+  border-radius: 50%;       /* turns the square into a circle */
+  border: 4px solid white;  /* the circular border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+  transition: transform 0.2s ease;
+
+  width: 120px;
+}
+.gallery img:hover {
+  transform: scale(1.08);
+}
+
+

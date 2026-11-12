@@ -1,0 +1,13 @@
+body {
+background-color: cornflowerblue;
+}
+main{ 
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+header,footer{
+grid-column: 2/-2;
+background-color: burlywood;
+
+}

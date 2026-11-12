@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+        
+         <table>
+  
+  <tr>
+    <th>Speaker</th>
+    <th>Title</th>
+    <th>Location</th>
+    <th>Year</th>
+  </tr>
+  
+  <tr>
+    <td>Elder Holland</td>
+    <td>Remember Lot's Wife</td>
+    <td>BYU</td>
+    <td>2009</td>
+  </tr>
+  
+  <tr>
+    <td>Elder Holland</td>
+    <td>Within the clasp of your arms</td>
+    <td>Salt lake city</td>
+    <td>1983</td>
+  </tr>
+  
+  <tr>
+    <td>Brad Wilcox</td>
+    <td>His Grace is Sufficient</td>
+    <td>BYU</td>
+    <td>2011</td>
+  </tr>
+</table>
+    <section>
+      <h2>Add a Devotional</h2>
+      <p class="subtitle" style="margin-bottom:0">Share another message with the collection.</p>
+
+      <form id="devotional-form">
+        <div class="field">
+          <label for="speaker">Speaker name</label>
+          <input type="text" id="speaker" name="speaker" required>
+        </div>
+        <div class="field">
+          <label for="title">Devotional title</label>
+          <input type="text" id="title" name="title" required>
+        </div>
+        <div class="field">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" required>
+        </div>
+        <div class="field">
+          <label for="year">Year</label>
+          <input type="number" id="year" name="year" min="1900" max="2100" required>
+        </div>
+        <div class="actions">
+          <button type="submit">Add devotional</button>
+        </div>
+      </form>
+    </section>
+      </div>
+  
+    </main>
+  </div>
+</body>
+</html>

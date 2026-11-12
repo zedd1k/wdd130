@@ -1,0 +1,12 @@
+img{
+max-width: 300px;
+width: 100%;
+margin: 0;
+border: 0;
+
+}
+article{
+    width:500px;
+    text-align: center;
+    margin:0 auto;
+}
